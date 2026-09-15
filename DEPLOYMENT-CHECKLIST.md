@@ -1,8 +1,32 @@
-# Deployment
+# BIAvanta Production Checklist
 
-1. Push this project to a GitHub repository.
-2. Render backend: root `backend`, build `pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --noinput && python manage.py seed_demo`, start `gunicorn config.wsgi:application`.
-3. Set `DEBUG=False`, `SECRET_KEY`, `ALLOWED_HOSTS`, `CORS_ALLOWED_ORIGINS`, and a PostgreSQL `DATABASE_URL`.
-4. Render frontend: root `frontend`, build `npm install && npm run build`, publish `dist`. Set `VITE_API_BASE_URL` to the backend `/api` URL.
-5. Add SPA rewrite `/*` -> `/index.html`.
-6. Test `/api/health/`, `/api/products/`, `/api/insights/`, `/api/work/`, contact form and `/admin/`.
+## Frontend
+- [ ] Root Directory = `frontend`
+- [ ] Build = `npm install && npm run build`
+- [ ] Publish Directory = `dist`
+- [ ] `VITE_API_BASE_URL=https://biavanta-backend.onrender.com/api`
+- [ ] Rewrite `/*` -> `/index.html`
+
+## Backend
+- [ ] Root Directory = `backend`
+- [ ] `DEBUG=False`
+- [ ] `ALLOWED_HOSTS=biavanta-backend.onrender.com`
+- [ ] `CORS_ALLOWED_ORIGINS=https://biavanta-frontend.onrender.com`
+- [ ] `CSRF_TRUSTED_ORIGINS=https://biavanta-frontend.onrender.com`
+- [ ] PostgreSQL `DATABASE_URL` is connected
+- [ ] Health check `/api/health/` returns status `ok`
+
+## Final browser tests
+- [ ] Home
+- [ ] Company
+- [ ] Products
+- [ ] Solutions
+- [ ] Work
+- [ ] Innovation
+- [ ] Insights
+- [ ] Founder
+- [ ] Portfolio
+- [ ] Contact
+- [ ] Refresh a direct route such as `/products`
+- [ ] Submit the contact form
+- [ ] Check mobile menu and mobile layout
