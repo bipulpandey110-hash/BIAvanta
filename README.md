@@ -1,55 +1,169 @@
-# BIAvanta — Full-Stack Company Website
+# BIAvanta
 
-A premium light-blue corporate website for BIAvanta, built with React + TypeScript + Django REST Framework.
+### Data. Intelligence. Digital Innovation.
 
-## Included
-Home, Company, Founder, Products, Solutions, Work, Innovation, Insights, Portfolio and Contact.
+BIAvanta is a technology and digital innovation company focused on building intelligent, scalable, and modern digital solutions.
 
-## Local development
+We work across Data Analytics, Business Intelligence, Artificial Intelligence, Web Development, SaaS Development, and Digital Product Development.
 
-Backend:
-```powershell
-cd backend
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py seed_demo
-python manage.py runserver
-```
+Our goal is simple:
 
-Frontend:
-```powershell
-cd frontend
-npm install
-npm run dev
-```
+> Turn data and ideas into intelligent digital experiences that create real business impact.
 
-Create `frontend/.env`:
-```env
-VITE_API_BASE_URL=http://127.0.0.1:8000/api
-```
+---
 
-## Render
+## 🌐 Live Website
 
-### Backend
-- Root Directory: `backend`
-- Build: `pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --noinput && python manage.py seed_demo`
-- Start: `gunicorn config.wsgi:application --workers 2 --threads 4 --timeout 60`
-- Health: `/api/health/`
+https://biavanta-frontend.onrender.com
 
-Set:
-- `DEBUG=False`
-- `SECRET_KEY=<generated>`
-- `ALLOWED_HOSTS=biavanta-backend.onrender.com`
-- `CORS_ALLOWED_ORIGINS=https://biavanta-frontend.onrender.com`
-- `CSRF_TRUSTED_ORIGINS=https://biavanta-frontend.onrender.com`
-- `DATABASE_URL=<your PostgreSQL connection string>`
+---
+
+## 🚀 What BIAvanta Does
+
+- Data Analytics & Business Intelligence
+- Artificial Intelligence Solutions
+- SaaS Development
+- Full-Stack Web Development
+- Business Software Solutions
+- Digital Product Development
+- Data-Driven Digital Innovation
+
+---
+
+## ✨ Website Features
+
+- Modern corporate technology interface
+- Responsive desktop and mobile design
+- Company overview
+- Products showcase
+- Business solutions
+- Case studies / work section
+- Innovation section
+- Insights section
+- Founder section
+- Portfolio
+- Contact form
+- REST API integration
+- Production-ready deployment
+
+---
+
+## 🧩 Technology Stack
 
 ### Frontend
-- Root Directory: `frontend`
-- Build: `npm install && npm run build`
-- Publish Directory: `dist`
-- `VITE_API_BASE_URL=https://biavanta-backend.onrender.com/api`
 
-The Render blueprint includes the SPA rewrite `/* -> /index.html`, so refreshing any React route works correctly.
+- React
+- TypeScript
+- Vite
+- CSS
+
+### Backend
+
+- Python
+- Django
+- Django REST Framework
+
+### Database
+
+- PostgreSQL
+
+### Deployment
+
+- Render
+- GitHub
+
+---
+
+## 🏗️ Architecture
+
+```text
+BIAvanta
+│
+├── frontend/
+│   ├── React
+│   ├── TypeScript
+│   ├── Vite
+│   └── CSS
+│
+├── backend/
+│   ├── Django
+│   ├── Django REST Framework
+│   └── API
+│
+└── Database
+    └── PostgreSQL
+🔌 API
+
+The backend provides REST API endpoints for:
+
+Products
+Work / Case Studies
+Insights
+Contact Messages
+Health Check
+
+Example:
+
+/api/health/
+/api/products/
+/api/work/
+/api/insights/
+/api/contact/
+📱 Responsive Experience
+
+The website is designed to work across:
+
+Desktop
+Laptop
+Tablet
+Mobile
+
+The interface adapts to different screen sizes while maintaining a clean corporate experience.
+
+🚀 Deployment
+
+The application is deployed using Render.
+
+Frontend
+Root Directory: frontend
+Build Command: npm install && npm run build
+Publish Directory: dist
+Backend
+Root Directory: backend
+Django + Django REST Framework
+🎯 Vision
+
+BIAvanta aims to build technology that goes beyond appearance.
+
+We focus on creating systems that:
+
+Understand data → Generate insights → Enable decisions → Create impact
+
+📌 Project Status
+
+Production Ready
+
+The current version includes:
+
+Production frontend
+Production backend
+API integration
+Database integration
+Contact form
+Responsive UI
+Live deployment
+👨‍💻 Development
+
+Designed and developed by Bipul Kumar Pandey.
+
+📄 License
+
+This repository contains the BIAvanta website and application code.
+
+© 2026 BIAvanta. All rights reserved.
+
+
+### Ye README kaisa hai?
+
+**Company jaisa lagega, personal portfolio jaisa nahi.**  
+Aur GitHub par client/recruiter aaye to directly **BIAvanta + services + technology + live website** samajh jay
